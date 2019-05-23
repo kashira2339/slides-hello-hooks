@@ -8,6 +8,10 @@
     "fusuma": "^1.1.0"
   },
   "scripts": {
+    "start": "fusuma start",
+    "build": "fusuma build",
+    "deploy": "fusuma deploy",
+    "pdf": "fusuma pdf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

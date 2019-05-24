@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {},
+  "config": {
+    "name": "slides/hello-hooks"
+  },
   "devDependencies": {
     "fusuma": "^1.1.0"
   },
   "scripts": {
-    "start": "fusuma start",
-    "build": "fusuma build",
-    "deploy": "fusuma deploy",
-    "pdf": "fusuma pdf",
+    "pdf": "npm run build && fusuma pdf -d $npm_package_config_name",
+    "start": "fusuma start -d $npm_package_config_name",
+    "build": "fusuma build -d $npm_package_config_name",
+    "deploy": "npm run build && fusuma deploy -d $npm_package_config_name",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

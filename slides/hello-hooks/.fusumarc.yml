@@ -1,23 +1,21 @@
 meta:
-  url: https://kashira2339.github.io/slides
-  name:
+  title: hello-hooks
   author: Taka
   description: React Hooks
   thumbnail: https://avatars3.githubusercontent.com/u/7392701?s=460&v=4
-  siteName:
   repositoryUrl: https://github.com/kashira2339/slides
   sns: ["twitter"]
 slide:
-  loop: true
+  loop: false
   sidebar: true
   targetBlank: true
   showIndex: false
-  isVertical: false
   code:
     languages:
       - javascript
+      - typescript
+      - json
     plugins: []
-    theme: default
 extends:
   js:
   css:
